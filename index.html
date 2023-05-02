@@ -8,11 +8,12 @@
         body {
             font-family: 'Montserrat', sans-serif;
         }
-        .card {
-            transition: transform 0.3s ease-in-out;
+        .flex {
+            display: flex;
         }
-        .card:hover {
-            transform: translateY(-10px);
+        .overflow-x-scroll {
+            overflow-x: scroll;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -23,25 +24,27 @@
     <p>Phone: (+61) 0403 870 261</p>
 </header>
 <main class="p-4">
-    <section class="card">
-        <h2 class="text-xl font-bold mb-4">Objective</h2>
-        <p>To gain the skills and experience necessary to be a software engineer</p>
-    </section>
-    <section class="card">
-        <h2 class="text-xl font-bold mb-4">Education</h2>
-        <p>Dux at Geelong Grammar School, 2018 (Notional ATAR 99.85)</p>
-        <p>Bachelor of Science, Major in Computing and Software Systems, University of Melbourne, 2023</p>
-    </section>
-    <section class="card">
-        <h2 class="text-xl font-bold mb-4">Skills</h2>
-        <p class="mb-2">Learning: Driven, fastidious learner</p>
-        <p class="mb-2">Coding: Python, Java, C</p>
-        <p class="mb-2">DevOps and Data Engineering: Jenkins, Airflow, ElasticSearch</p>
-    </section>
-    <section class="card">
-        <h2 class="text-xl font-bold mb-4">Experience</h2>
-        <p>Intern DevOps Engineer, Service Design and Automation, NAB 2022-23</p>
-    </section>
+    <div class="flex overflow-x-scroll">
+        <section class="mr-4">
+            <h2 class="text-xl font-bold mb-4">Objective</h2>
+            <p>To gain the skills and experience necessary to be a software engineer</p>
+        </section>
+        <section class="mr-4">
+            <h2 class="text-xl font-bold mb-4">Education</h2>
+            <p>Dux at Geelong Grammar School, 2018 (Notional ATAR 99.85)</p>
+            <p>Bachelor of Science, Major in Computing and Software Systems, University of Melbourne, 2023</p>
+        </section>
+        <section class="mr-4">
+            <h2 class="text-xl font-bold mb-4">Skills</h2>
+            <p class="mb-2">Learning: Driven, fastidious learner</p>
+            <p class="mb-2">Coding: Python, Java, C</p>
+            <p class="mb-2">DevOps and Data Engineering: Jenkins, Airflow, ElasticSearch</p>
+        </section>
+        <section class="mr-4">
+            <h2 class="text-xl font-bold mb-4">Experience</h2>
+            <p>Intern DevOps Engineer, Service Design and Automation, NAB 2022-23</p>
+        </section>
+    </div>
 </main>
 <footer class="bg-gray-800 p-4 text-center">
     <p class="text-sm">Do Yeong Kim</p>
